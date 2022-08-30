@@ -1,0 +1,11 @@
+In order of priority:
+4. Incorporate a script where typing into the search bar types into the website browser
+
+Done:
+1. change and organise layout for different viewport resolutions
+2. change font
+5. background
+6. app icons
+
+Removed:
+3. Complete the clock, date, and weather block

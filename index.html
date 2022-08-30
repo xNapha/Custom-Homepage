@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <script src="dashboard.js" defer></script>
 </head>
 <body>
+    <div id="background"></div>
     <div id="container">
         <header>
             <div></div>
@@ -29,117 +31,93 @@
             <div class="groups">
                 <h2 class="groupName">Streaming</h2>
                 <div class="appContainer">
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">Youtube</p>
-                    </div>
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">Twitch</p>
-                    </div>
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">Netflix</p>
-                    </div>
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">Amazon Prime</p>
-                    </div>
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">Apple Tv</p>
-                    </div>
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">Crunchyroll</p>
-                    </div>
+                    <a class="apps" href="https://www.youtube.com/feed/subscriptions" target="_blank">
+                        <img class="icon" src="./assets/Youtube-Icon.png">
+                    </a>
+                    <a class="apps" target="_blank" href="https://www.twitch.tv/">
+                        <img class="icon" src="./assets/Twitch-Icon.png">
+                    </a>
+                    <a class="apps" target="_blank" href="https://www.netflix.com/browse">
+                        <img class="icon" src="./assets/Netflix-Icon.png">
+                    </a>
+                    <a class="apps" target="_blank" href="https://www.primevideo.com/ref=atv_nb_logo">
+                        <img class="icon" src="./assets/Amazon-Prime-Icon.png">
+                    </a>
+                    <a class="apps" target="_blank" href="https://tv.apple.com/au/">
+                        <img class="icon" src="./assets/Apple-Tv-Icon.png">
+                    </a>
+                    <a class="apps" target="_blank" href="https://beta.crunchyroll.com/">
+                        <img class="icon" src="./assets/Crunchyroll-Icon.png">
+                    </a>
                 </div>
-            </div>
-            <div id="info">
-                <div id="date">25/8/22</div>
-                <div id="clock">1:30</div>
-                <div id="weather">24 Celcius</div>
             </div>
             <div class="groups">
                 <h2 class="groupName">Coding</h2>
                 <div class="appContainer">
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">Github</p>
-                    </div>
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">Odin Project</p>
-                    </div>
+                    <a class="apps" target="_blank" href="https://github.com/">
+                        <img class="icon" src="./assets/Github-Icon.png">
+                    </a>
+                    <a class="apps" target="_blank" href="https://www.theodinproject.com/dashboard">
+                        <img class="icon" src="./assets/The-Odin-Project.png">
+                    </a>
                 </div>
             </div>
             <div class="groups">
                 <h2 class="groupName">Job</h2>
                 <div class="appContainer">
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">Indeed</p>
-                    </div>
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">Seek</p>
-                    </div>
+                    <a class="apps" target="_blank" href="https://au.indeed.com/?from=gnav-homepage">
+                        <img class="icon" src="./assets/indeed-icon.png">
+                    </a>
+                    <a class="apps" target="_blank" href="https://www.seek.com.au/">
+                        <img class="icon" src="./assets/seek-icon.png">
+                    </a>
                 </div>
             </div>
             <div class="groups">
                 <h2 class="groupName">Reading</h2>
                 <div class="appContainer">
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">Manga Plus</p>
-                    </div>
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">Webtoon</p>
-                    </div>
+                    <a class="apps" target="_blank" href="https://mangaplus.shueisha.co.jp/updates">
+                        <img class="icon" src="./assets/Manga-Plus-Icon.png">
+                    </a>
+                    <a class="apps" target="_blank" href="https://www.webtoons.com/en/">
+                        <img class="icon" src="./assets/Webtoon-Icon.png">
+                    </a>
                 </div>
             </div>
             <div class="groups">
                 <h2 class="groupName">Social</h2>
                 <div class="appContainer">
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">Facebook</p>
-                    </div>
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">LinkedIn</p>
-                    </div>
+                    <a class="apps" target="_blank" href="https://www.facebook.com/">
+                        <img class="icon" src="./assets/Facebook-Icon.png">
+                    </a>
+                    <a class="apps" target="_blank" href="https://www.linkedin.com/feed/">
+                        <img class="icon" src="./assets/LinkedIn-Icon.png">
+                    </a>
                 </div>
             </div>
             <div class="groups">
                 <h2 class="groupName">Shopping</h2>
                 <div class="appContainer">
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">Amazon</p>
-                    </div>
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">Ebay</p>
-                    </div>
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">Book Despository</p>
-                    </div>
+                    <a class="apps" target="_blank" href="https://www.amazon.com.au/ref=nav_logo">
+                        <img class="icon" src="./assets/Amazon-Icon.png">
+                    </a>
+                    <a class="apps" target="_blank" href="https://www.ebay.com.au/">
+                        <img class="icon" src="./assets/Ebay-Icon.png">
+                    </a>
+                    <a class="apps" target="_blank" href="https://www.booktopia.com.au/">
+                        <img class="icon" src="./assets/Booktopia-Icon.png">
+                    </a>
                 </div>
             </div>
             <div class="groups">
                 <h2 class="groupName">Gaming</h2>
                 <div class="appContainer">
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">Maplestory</p>
-                    </div>
-                    <div class="apps">
-                        <img class="icon">
-                        <p class="iconName">TFT Meta Report</p>
-                    </div>
+                    <a class="apps" target="_blank" href="https://maplestory.nexon.net/">
+                        <img class="icon" src="./assets/Maplestory-Icon.png">
+                    </a>
+                    <a class="apps" target="_blank" href="https://tftactics.gg/">
+                        <img class="icon" src="./assets/tftactics-Icon.png">
+                    </a>
                 </div>
             </div>
         </div>
